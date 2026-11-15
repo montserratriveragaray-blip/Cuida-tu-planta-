@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuida tu planta 🌿</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <header>
+    <h1>🌿 Cuida tu planta</h1>
+    <p>Un pequeño espacio para aprender a cuidar la naturaleza.</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#riego">Riego</a>
+    <a href="#cuidados">Cuidados</a>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2>¡Bienvenido a tu jardín!</h2>
+      <p>
+        Las plantas necesitan cuidados especiales para crecer
+        saludables. Aprende a conocer sus necesidades y a
+        protegerlas.
+      </p>
+    </section>
+
+    <section id="riego">
+      <h2>💧 ¿Cuándo regar?</h2>
+      <p>La mañana, entre las 6:00 y las 8:00, suele ser un buen
+      momento para regar las plantas.</p>
+      <p>Si no puedes hacerlo por la mañana, puedes regarlas
+      al final de la tarde.</p>
+    </section>
+
+    <section id="cuidados">
+      <h2>🌸 Consejos para cuidar tus plantas</h2>
+      <ul>
+        <li>Evita regarlas en exceso.</li>
+        <li>Utiliza macetas con buen drenaje.</li>
+        <li>Colócalas donde reciban la luz adecuada.</li>
+        <li>Limpia sus hojas con un paño húmedo.</li>
+        <li>Retira las hojas secas.</li>
+        <li>Utiliza abonos naturales.</li>
+        <li>Reutiliza recipientes como macetas.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🌱 Descubre tu planta</h2>
+      <p>¿Sabías que cada planta necesita una cantidad
+      diferente de agua?</p>
+      <button onclick="mostrarConsejo()">Ver consejo</button>
+      <p id="consejo"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con 💚 para cuidar nuestro planeta.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
