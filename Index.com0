@@ -1,1 +1,202 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuida tu planta</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f3e9;
+  color: #405442;
+}
+
+header {
+  background: #789477;
+  color: white;
+  text-align: center;
+  padding: 45px 15px;
+}
+
+header h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+nav {
+  background: #e3eadb;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: #405442;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  background: white;
+  padding: 25px;
+  margin: 22px 0;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px #00000010;
+}
+
+h2 {
+  color: #66866a;
+}
+
+li {
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+button {
+  background: #789477;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #526f53;
+}
+
+#consejo {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #66866a;
+}
+
+footer {
+  background: #789477;
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌿 Cuida tu planta 🌿</h1>
+  <p>Pequeños cuidados hacen crecer grandes cosas.</p>
+</header>
+
+<nav>
+  <a href="#riego">Riego</a>
+  <a href="#tierra">Tierra</a>
+  <a href="#cuidados">Cuidados</a>
+</nav>
+
+<main>
+
+<section>
+  <h2>🌱 Bienvenido</h2>
+  <p>
+    Las plantas son seres vivos que necesitan agua,
+    luz, nutrientes y cuidados para crecer saludables.
+    En esta página aprenderás cómo cuidarlas.
+  </p>
+</section>
+
+<section id="riego">
+  <h2>💧 ¿Cuándo regar las plantas?</h2>
+  <p>
+    Los mejores momentos para regar suelen ser
+    temprano por la mañana, entre las 6 y 8,
+    o por la tarde, entre las 6 y 8.
+  </p>
+  <ul>
+    <li>Evita regar durante las horas de mucho calor.</li>
+    <li>Comprueba la humedad de la tierra antes de regar.</li>
+    <li>Las plantas de interior también necesitan agua y luz.</li>
+    <li>La cantidad de agua depende de cada planta.</li>
+  </ul>
+</section>
+
+<section id="tierra">
+  <h2>🌻 Tipos de tierra</h2>
+  <ul>
+    <li><b>Tierra arenosa:</b> deja pasar el agua rápidamente.</li>
+    <li><b>Tierra arcillosa:</b> retiene más agua.</li>
+    <li><b>Tierra limosa:</b> conserva humedad y nutrientes.</li>
+    <li><b>Tierra mezclada:</b> combina materiales para ayudar al crecimiento.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>☀️ Factores que influyen en el riego</h2>
+  <ul>
+    <li>Tipo de planta.</li>
+    <li>Tipo de tierra.</li>
+    <li>Clima y temperatura.</li>
+    <li>Ubicación: interior o exterior.</li>
+  </ul>
+</section>
+
+<section id="cuidados">
+  <h2>🌷 10 consejos para cuidar tus plantas</h2>
+  <ol>
+    <li>Regarlas según sus necesidades.</li>
+    <li>Darles suficiente luz.</li>
+    <li>Utilizar tierra adecuada.</li>
+    <li>Elegir una maceta con drenaje.</li>
+    <li>Retirar las hojas secas.</li>
+    <li>Limpiar sus hojas con cuidado.</li>
+    <li>Revisar que no tengan plagas.</li>
+    <li>Proporcionarles nutrientes.</li>
+    <li>Evitar el exceso de agua.</li>
+    <li>Observar su crecimiento constantemente.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>🌼 Consejo del día</h2>
+  <p>Presiona el botón para descubrir un consejo.</p>
+  <button onclick="mostrarConsejo()">Ver consejo</button>
+  <p id="consejo"></p>
+</section>
+
+</main>
+
+<footer>
+  <p>🌿 Cuida tu planta | Protejamos la naturaleza 🌿</p>
+</footer>
+
+<script>
+const consejos = [
+  "Revisa la humedad de la tierra antes de regar.",
+  "Busca un lugar con luz adecuada para tu planta.",
+  "No todas las plantas necesitan la misma cantidad de agua.",
+  "Retira las hojas secas para mantenerla saludable.",
+  "Cuida tus plantas con paciencia y constancia."
+];
+
+function mostrarConsejo() {
+  const numero = Math.floor(Math.random() * consejos.length);
+  document.getElementById("consejo").textContent = consejos[numero];
+}
+</script>
+
+</body>
+</html>
